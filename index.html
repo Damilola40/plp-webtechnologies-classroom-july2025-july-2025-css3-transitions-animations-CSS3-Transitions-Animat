@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Week 7 - Assignement</title>
+</head>
+<body>
+    <div id="login">
+        <div id="head">
+            <h2>Enter your <span>Username</span></h2>
+            <button id="theme-toggle">Change Theme</button>
+        </div>
+        <label for="username"></label>
+        <input type="text" id="username" required>
+        <button id="loginBtn">Continue</button>
+
+    </div>
+    <div id="container">
+        <div id="header">
+            <h2 id="clock">00:00:00</h2>
+            <h2>Why <span>Bees</span> Matter?</h2>
+            <button id="theme-toggle1">Change Theme</button>
+        </div>
+        <div id="main">
+            <p>
+                <span>Bees</span> may be small, but they do a big job. As they fly from flower to flower, they carry pollen.
+                This process called 'pollination', helps plants grow fruits and vegetables. Without bees, many of the foods we eat - 
+                like apples, strawberries, and almonds - would become hard to find. Bees also make honey, which people use in cooking
+                and medicine. Sadly bee populations are shrinking due to pesticides, climate change, and fewer flowers in cities. 
+                To help bees, we can plant wild flowers, avoid harmful sprays and support bee-friendly farms. Even a small garden can make a difference!
+            </p>
+            <div class="bee-image">
+                <img src="images/bee.png" alt="Bee on flower">
+            </div>
+        </div>
+        <div id="confirmation">
+            <p>Are you done reading?</p>
+            <button id="read">Yes</button>
+            <button id="notRead">No</button>
+        </div>
+        <div>
+            <h3 class="title">Let's Test Your<span> Knowledge</span></h3>
+            <div id="questions">
+                <li>Imagine you are a bee for a day, what would you be carrying from bee to bee? <br>
+                    <button class="answer" name="option1">Pollen</button> 
+                    <button class="answer" name="option1">Seeds</button></li>
+                <li>Which food depends on bees? <br>
+                    <button class="answer" name="option2">Apples</button> 
+                    <button class="answer" name="option2">Tomatoes</button></li>
+                <li>What do bees produce that is used in cooking and medicine? <br>
+                    <button class="answer" name="option3">Water</button> 
+                    <button class="answer" name="option3">Honey</button></li>
+                <li>Why are bee populations shrinking?<br>
+                    <button class="answer" name="option4">Pesticide and Climate Change</button>
+                    <button class="answer" name="option4">Too many flowers</button></li>
+                <li>If you had a small garden, what is one thing you could plant to help bees? <br>
+                    <input type="text" placeholder="Answer"></li>
+            </ol>
+            </div>
+            </div>    
+        </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

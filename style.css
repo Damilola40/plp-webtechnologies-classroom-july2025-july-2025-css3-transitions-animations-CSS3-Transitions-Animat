@@ -1,0 +1,382 @@
+/*---Username Section Styling---*/
+#login {
+    position: absolute;
+    justify-content: center;
+    width: 300px;
+    margin: 10% 40%;
+    padding: 3%;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(255, 241, 51, 0.945);
+}
+#login #head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#login span {
+    color: rgba(255, 241, 51, 0.945);
+}
+/*--Dark Theme Buton--*/
+#login #theme-toggle {
+    width: fit-content;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s ease;
+}
+#login #theme-toggle:hover {
+    border: none;
+    box-shadow: 0 0 20px rgba(255, 241, 51, 0.945);
+}
+
+#login input {
+    border: none;
+    box-shadow: 10px 10px 30px rgba(255, 241, 51, 0.945);
+    padding: 3%;
+}
+#login button {
+    margin-top: 10%;
+    padding: 5% 15% 5% 15%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000000;
+    color: rgba(255, 241, 51, 0.945);
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+#login button:hover {
+    background-color: #ffff00;
+    color: #000000;
+}
+/*Dark Theme*/
+body.dark #login{
+    background: #000000;
+    color: #ffffff;
+}
+body.dark #login #head button, 
+body.dark #login button {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid rgba(255, 241, 51, 0.945);
+}
+body.dark #login input {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid rgba(255, 241, 51, 0.945);
+    border-radius: 5px;
+    box-shadow: none;
+    transition: box-shadow 0.5s ease;
+}
+body.dark #login input:hover, button:hover{
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(255, 241, 51, 0.945);
+}
+/*--Shrink Button Onclick--*/
+.hide {
+    animation: hide 0.5s ease-out forwards;
+}
+@keyframes hide {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+.animate {
+    animation: shrink 0.3s ease-in-out;
+}
+@keyframes shrink {
+    from {transform: scale(1)};
+    to {transform: scale(0.9)};
+}
+/*-- Responsive Styling--*/
+@media (max-width: 768px) {
+    #login {
+        width: 200px;
+        margin: 20% 30% 0 30%;
+        justify-content: center;
+    }
+}
+
+/*--- Body Styling ---*/
+
+.hidden { 
+    display: none; 
+}
+.visible { 
+    display: block;
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#container {
+    display: none;
+    background-color: #ffffff;
+    margin: 5% 10% 5% 10%;
+    padding: 10px 30px;
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+}
+/*--Responsive Styling--*/
+@media (max-width: 868px) {
+    #container {
+        margin-bottom: 50px;
+    }
+}
+
+/*--- Page Header ---*/
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px auto;
+}
+/*-- Time --*/
+
+/*-- Heading & Button --*/
+#header h2, button {
+    text-align: center;
+    margin: 0 30px 0 30px;
+}
+#header h2 {
+    font-size: 2.5em;
+}
+#header span {
+    color: rgba(255, 241, 51, 0.945);
+}
+#header button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out, box-shadow 0.5s ease;
+}
+#header button:hover {
+    border: none;
+    box-shadow: 0 0 20px rgba(255, 241, 51, 0.945);
+} 
+
+/*Clock*/
+#clock {
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+
+/*Dark theme toggle btn*/
+body.dark{
+    background: #000000;
+    color: #ffffff;
+}
+body.dark #container {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid rgba(255, 241, 51, 0.945);
+    box-shadow: 0 0 50px rgba(255, 241, 51, 0.945);
+}
+body.dark #header button,
+body.dark #questions button,
+body.dark #confirmation button,
+body.dark #questions input {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid rgba(255, 241, 51, 0.945);
+}
+
+/*-- Responsive Styling --*/
+@media (max-width: 868px) {
+    #header h2 {
+        font-size: 1.5rem;
+    }
+    #header button {
+        padding: 0 10px;
+    }
+}
+/*--- Main Body Styling ---*/
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#main span {
+    color: rgba(255, 241, 51, 0.945);
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+#main p {
+    padding-right: 15%;
+    font-size: 2rem;
+}
+/*--Responsive Styling--*/
+@media (max-width: 868px) {
+    #main {
+        flex-direction: column;
+    }
+    #main p {
+        padding-right: 0;
+        font-size: 1.3rem;
+    }
+    #main span {
+        font-size: 1.5rem;
+    }
+}
+.bee-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bee-image img {
+    width: 150px;
+    height: 250px;
+    animation: glide 8s ease-in-out infinite;}
+
+/* Circular orbit */
+@keyframes glide {
+    0% { transform: rotate(0deg) scale(1); }
+    25% { transform: rotate(90deg) scale(1.5); }
+    50% { transform: rotate(180deg) scale(2); }
+    75% { transform: rotate(270deg) scale(1.5); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+
+/*-- Responsive Styling --*/
+@media (min-width: 868px) {
+    .bee-image img {
+        margin-right: 200px !important;
+        width: 200px;
+        height: 300px;
+    }
+}
+
+/*--- Confirmation Section---*/
+#confirmation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3%;
+}
+#confirmation p {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+#confirmation button {
+    margin: 1% 4%;
+    padding: 0 4%;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s ease;
+}
+#confirmation button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(255, 241, 51, 0.945);
+}
+
+/*--Responsive Styling--*/
+@media (max-width: 768px) {
+    #confirmation p {
+        font-size: 1.2rem;
+    }
+    #confirmation button {
+        margin-left: 4%;
+        padding: 0 5%;
+        font-size: 1rem;
+    }
+}
+
+/*--- Question Section ---*/
+#questions {
+    margin: 0 0 5% 2%;
+    filter: blur(10px);
+    transition: filter 0.5s ease-in-out;   
+}
+#questions.clear {
+    filter: blur(0px);
+}
+.title {
+    font-size: 1.7rem;
+}
+.title span {
+    color: rgba(255, 241, 51, 0.945);
+    font-size: 2rem;
+}
+#questions li {
+    margin: 10px 10px 10px 10px;
+    font-size: 1.5rem;
+}
+#questions button {
+    margin-top: 1%;
+    padding: 1% 3%;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s ease;
+}
+#questions button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(255, 241, 51, 0.904);
+}
+#questions input {
+    margin-top: 1%;
+    padding: 1% 3%;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s ease;
+}
+#questions input:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(255, 241, 51, 0.945);
+}
+.click {
+    animation: click 0.5s ease-in;
+}
+/*--Responsive Styling--*/
+@media (max-width: 868px) {
+    #questions {
+    filter: blur(10px);
+    flex-direction: column;
+}
+    .questions h3 {
+        font-size: 1.4rem;
+    }
+    .questions span {
+        font-size: 1.5rem;
+    }
+    #questions li {
+        font-size: 1.2rem;
+    }
+    #questions button {
+        padding: 2% 4%;
+        margin: 1.5% 10% 0% 0%;
+        font-size: 1rem;
+    }
+    #questions input {
+        padding: 2% 4%;
+        font-size: 1rem;
+    }
+}
